@@ -1,0 +1,50 @@
+<!doctype html>
+<!--
+    Filename: Shaker.html
+    Written by: Brennan Castillo
+    Purpose: Movers and Shakers
+    Date: 04/07/2020
+	This page was tested on Chrome and IE.
+	IE had different fade effects but had the same response time.
+ -->
+
+
+<html lang="en">
+    <head>
+    <style>
+	img {
+	  width: 200px;
+	  height: 200px;
+	}
+	</style>
+        <title>Movers and Shakers</title>
+        <meta charset="utf-8">
+        <!-- Link to some stylesheet goes first -->
+		<link rel="stylesheet" href="../style/dubloons.css">
+		<!-- Link to hosted jQuery library goes after css file but before local js file -->
+        <!-- Probable performance boost if at very bottom of file -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Link to js file specific to this html page goes below hosted library link -->
+        <script src="shake.js"></script>
+    </head>
+    
+    <body>
+	<form>
+	<br>
+	<input type="button" name="hide" value="Hide" id="hide">
+	<input type="button" name="show" value="Show" id="show">
+	<input type="button" name="toggle" value="Toggle" id="toggle">
+	<input type="button" name="slideUp" value="Slide Up" id="slideup">
+	<input type="button" name="slideDown" value="Slide Down" id="slidedown">
+	<input type="button" name="fadeOut" value="Fade Out" id="fadeout">
+	<input type="button" name="fadeIn" value="Fade In" id="fadein">
+	<input type="button" name="chain" value="Chain" id="chain">
+	<input type="button" name="multi" value="Multiple" id="multi">
+	<br>
+	<br>		
+	<br>
+	<img src="iupuij.jpg" id="target">
+	</form>
+	</body>
+</html>

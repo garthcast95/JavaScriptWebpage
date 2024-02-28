@@ -1,0 +1,24 @@
+/*
+ Filename: dubloons.css
+ Written by: Brennan Garth Castillo
+ Purpose: Use a Sample CSS template .
+ Date: 15 Jan 2020
+ Modification History:
+ 15 Jan 2020 CSS created
+	*/
+body	{
+		background-color:#00bec4;
+		text-align:center;
+		}
+
+#rootbeard	{
+		border-bottom: 3px solid black;
+		color: #ffd700;
+		}
+#gangplank	{
+		border-bottom: 3px solid black;
+		color: #ff0d0d;
+		}
+.barrage	{
+		font-style: italic;
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<!--
+    Filename: ahoy.html
+    Written by: Brennan Castillo
+    Purpose: jQuery Development Environment Setup
+    Date: 03/09/2020
+    Modification History:
+	09 Mar 2020: Modified to Brennan's Jquery
+-->
+
+
+<html lang="en">
+    <head>
+    
+        <title>jQuery Development Environment Setup</title>
+        <meta charset="utf-8">
+        <!-- Link to some stylesheet goes first -->
+		<link rel="stylesheet" href="../style/dubloons.css">
+		<!-- Link to hosted jQuery library goes after css file but before local js file -->
+        <!-- Probable performance boost if at very bottom of file -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Link to js file specific to this html page goes below hosted library link -->
+        <script src="ahoy.js"></script>
+    </head>
+    
+    <body>
+			<button id="appendBtn">jQuery append function</button>
+			<button id="btnReplace">jQuery Replace function</button>
+	<p></p>
+    </body>
+
+</html>
