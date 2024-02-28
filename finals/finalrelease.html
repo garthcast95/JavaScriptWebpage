@@ -1,0 +1,134 @@
+<!doctype html>
+<!--
+ TITLE: FinalRelease.html					
+ AUTHOR: Brennan Garth Castillo
+ CREATE DATE: May 1 2020
+ PURPOSE: Final Release Project
+ LAST MODIFIED BY: Brennan Castillo
+ MODIFICATION HISTORY:
+ 01 MAY 2020: Original Build
+-->
+
+<!--
+ Browser Testing
+ Output is not running after form validation.
+ Google Chrome briefly shows without CSS or JS.
+ Internet Explorer and Edge do not display UI Widgets
+ Firefox works same as Chrome
+
+-->
+
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Form Validation</title>
+		<link rel="stylesheet" href="final.css">
+		<link href="theme/jquery-ui.css" rel="stylesheet"> 
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+			<script src="theme/external/jquery/jquery.js"></script>
+			<script src="theme/jquery-ui.js"></script>
+			<script src="Theme/n341/validation/dist/jquery.validate.js"></script>
+			<script src="FinalRelease.js"></script>
+	</head>
+
+   <body>
+
+	<h1>Order Form</h1>
+	
+	 <div id="tabs">
+        <ul>
+        <li><a href="#tabs-1">Services</a></li>
+        <li><a href="#tabs-2">Get A Quote</a></li>
+		</ul>
+		<div id = "tabs-1">		
+			<div id = "accordion">
+				<h2>Our Specialty</h2>
+					<p>We do photo productions. Our team specializies in landscapes and businesses. 
+				Clients across from National and International includes media production and support in website designing. 
+				Location, board and lodging varies from fees.
+					</p>
+				<h2>Contact us</h2>
+				<table>
+					<tr>
+						<th>Location</th>
+						<th>Address</th>
+						<th>Contact Info</th>
+					</tr>
+					<tr>
+						<td>U.S.A.</td>
+						<td>Indianapolis, IN</td>
+						<td>1-800-000-0000</td>
+					<tr>
+						<td>Philippines</td>
+						<td>Lipa city, Batangas</td>
+						<td>1-800-000-0000</td>
+					</tr>	
+				</table>
+						</div><br><br>
+					</div>
+					
+					<div id = "tabs-2">
+				
+						<form id="OrderForm">
+						<fieldset> 	
+							<legend>Get a Quote</legend>
+							
+							<label>Email*: </label><br>
+							<input name="email" type="email" id="emailid" required autofocus placeholder="unclesam@gmail.com"><br>
+							
+							<label>Password*: </label><br>
+							<input name="password" type="password" id="password"><br>
+							
+							<label>Telephone Number*: </label><br>
+							<input name="telephonenum" type="tel" id="telephonenum" placeholder="(317)888-8888"><br>
+							
+							<label>Date:<br></label> <input type="text" id="datepicker" name="date"></label><br><br>
+				
+							<label>Please Indicate the amount of visitors you are expecting</label><br>
+							<input name="spinner" id="visitorcount" class = "spinner" value="1" readonly><br><br>
+							
+							<label>What Services Are You Requesting Of?</label><br>
+
+							<input type="checkbox" name="checkboxval" value="Photoshoot" id="CHECKBOX1">
+							<label for="CHECKBOX1">Photoshoot</label><br>
+							
+							<input type="checkbox" name="checkboxval" value="Printing" id="CHECKBOX2">
+							<label for="CHECKBOX2">Printing</label><br>
+							
+							<input type="checkbox" name="checkboxval" value="Documentation" id="CHECKBOX3">
+							<label for="CHECKBOX3">Documentation</label><br>
+							
+							<input type="checkbox" name="checkboxval" value="Video Editing" id="CHECKBOX4">
+							<label for="CHECKBOX4">Video Editing</label><br>
+							
+							<input type="checkbox" name="checkboxval" value="Others" id="CHECKBOX5">
+							<label for="CHECKBOX5">Others</label><br><br>							
+							
+							<label>How long would this event be?</label><br>
+							<input type="radio" name="radio-1" value="Half a Day" id="radio1-1"><label for="radio1-1">Half a Day</label><br>
+							<input type="radio" name="radio-1" value="1 Whole Day" id="radio1-2" checked><label for="radio1-2">1 Whole Day</label><br>
+							<input type="radio" name="radio-1" value="Overnight" id="radio1-3"><label for="radio1-3">Overnight</label><br>
+							<input type="radio" name="radio-1" value="Others" id="radio1-4"><label for="radio1-3">Others</label><br><br>							
+							<label>For what event are you quoting for?</label>
+								<div>
+									<input id="MainEvent" name="autocomplete" class="autocomplete">
+								</div><br>
+							<label for="OtherDetails">Other Details</label><br>
+
+							<textarea id="OtherDetails" rows="4" cols="50" placeholder="Please explain in detail of your event" color="black">
+							</textarea>	<br><br>
+							<input type="submit" value="Submit" id = "Submitform">
+							<input type="reset" value="Reset" id = "Resetform">
+							<p id = "COMPLETEDFORM"></p>
+						</fieldset>
+						</form>
+					</div>
+				
+					
+	</div>
+							
+
+
+   </body>
+	
+</html>

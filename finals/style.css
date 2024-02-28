@@ -1,0 +1,115 @@
+/*	Date created: 	Dec 6, 2019
+	Author:			Brennan Garth Castillo */
+/* Custom Font */	
+@font-face {
+		font-family: menu;
+		src: url(bebas.ttf);
+		}
+/* Set Margin of whole body */		
+body {
+	background-color: black; 
+	margin-left: 200px;
+	margin-right: 200px;
+	color: white;
+	font-family: Arial;
+	}
+/* Menu Style background and etc.*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+	font-family: menu;
+	vertical-align: center;	
+	}
+/* Menu styles 	display as a block 
+Rollover effect for menu style*/
+li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	}
+/*when a menu item is hovered */	
+li a:hover {
+	background-color: gray;
+	color: white;
+	}
+
+/*Static footer menu */
+footer {
+   position:absolute;
+   bottom:0;
+   height:60px;
+   background:black;
+   color: white;
+   text-align:center;
+}	
+/* Set Margin to float on right */	
+li {
+	float: right;
+	font-size: 150%;
+	}
+h1	{
+		font-family:menu
+}	
+blockquote{
+	font-size:125%
+}
+/*Image grid 
+Have them stand out in one whole section*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 25px;
+}
+/*Setting the max width of a column */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+/*Max image size */
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+/*highlight description list*/
+dt	{
+	font-weight:bolder;
+	text-decoration:underline;
+	line-height: 1.5em;
+}
+/*Putting spacing between descriptions*/
+dd	{
+	margin-bottom: 20px;
+}
+/*Margins for the gallery */
+.gallery {
+	margin-left: 100px;
+    margin-right: 25px;
+}
+h3	{
+	font-style:italic;
+	line-height:1.25em;
+}
+h4	{
+	font-family:menu;
+	color: white;
+	line-height:0.25em;
+	font-style:normal;
+	font-size:150%;
+	}
+th	{
+	text-align:center;
+	border-style: solid;
+	border-bottom-style: solid;
+	border-bottom-color:white;
+}
+td	{
+	padding-right:20px;
+	border-bottom: 1px dashed white;
+}
